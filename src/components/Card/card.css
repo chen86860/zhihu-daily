@@ -1,0 +1,24 @@
+.card {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #eee;
+  display: flex;
+  padding: 10px 20px;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; }
+  .card p {
+    display: inline-block;
+    font-size: 20px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; }
+  .card img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    flex-shrink: 0; }
