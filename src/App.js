@@ -1,9 +1,7 @@
-import './App.css'
+import '~/css/common.scss'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import components from './components'
-// import { Provider } from 'react-redux'
-// import { store, history } from './store'
+import { Home, Detail } from '@/components'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -13,14 +11,13 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route path='/' exact component={components.Home}></Route>
-          <Route path='/home' exact component={components.Home}></Route>
-          <Route path="/detail/:id" component={components.Detail}></Route>
+          <Route path='/' exact component={Home}></Route>
+          <Route path='/home' exact component={Home}></Route>
+          <Route path="/detail/:id" component={Detail}></Route>
         </div>
-      </Router >
+      </Router>
     )
   }
 }
-
 
 export default App

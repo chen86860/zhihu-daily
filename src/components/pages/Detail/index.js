@@ -1,7 +1,7 @@
-import http from './../../base/http'
-import { daily } from './../../service'
+import http from '@/base/http'
+import { daily } from '@/service'
 import React, { Component } from 'react'
-import './Detail.css'
+import './Detail.scss'
 
 export default class Detail extends Component {
   constructor(props) {
@@ -28,11 +28,11 @@ export default class Detail extends Component {
     })
   }
   componentWillUpdate(prevProps, prevState) {
-    console.log(document.querySelector('.img-place-holder'));
+    console.log(document.querySelector('.img-place-holder'))
   }
-  
+
   componentDidUpdate(nextProps, nextState) {
-    console.log(document.querySelector('.img-place-holder'));
+    console.log(document.querySelector('.img-place-holder'))
   }
 
   htmlFilter(html) {
@@ -44,7 +44,7 @@ export default class Detail extends Component {
       return (
         <div>
           Params ID not Present!!!
-      </div>
+        </div>
       )
     }
     return (

@@ -1,7 +1,7 @@
-import './card.css'
-import React, { Component } from 'react';
+import './card.scss'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { daily } from './../../service'
+import { daily } from '@/service'
 
 export default class Card extends Component {
   constructor(props) {

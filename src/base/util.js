@@ -1,4 +1,4 @@
-export const util = {
+const util = {
   /**
      * @param {*url} str
      *  解析URL参数，返回查询对象
@@ -103,8 +103,8 @@ export const util = {
   debounce(fn, delay) {
     let timer = null
     return function () {
-      var context = this,
-        args = arguments
+      var context = this
+      var args = arguments
       clearTimeout(timer)
       timer = setTimeout(function () {
         fn.apply(context, args)
@@ -122,7 +122,9 @@ export const util = {
     let timer = null
     let tStart
     return function () {
-      var context = this, args = arguments, tCurr = +new Date()
+      var context = this
+      var args = arguments
+      var tCurr = +new Date()
       clearTimeout(timer)
       if (!tStart) {
         tStart = tCurr
@@ -147,3 +149,5 @@ export const util = {
     }
   }
 }
+
+export default util

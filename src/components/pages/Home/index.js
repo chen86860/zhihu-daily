@@ -1,10 +1,8 @@
-import './../../App.css'
-import http from './../../base/http'
-import { daily } from './../../service'
-import { util } from './../../base/util'
+import { daily } from '@/service'
+import { util, http } from '@/base'
 import { Link } from 'react-router-dom'
 import React, { Component } from 'react'
-import Card from './../Card/index'
+import { Card } from '@/components'
 
 export default class Home extends Component {
   constructor(props) {

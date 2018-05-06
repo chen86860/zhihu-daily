@@ -1,8 +1,8 @@
-import Home from './Home/index'
-import Card from './Card'
-import Detail from './Detail'
+import Home from './pages/Home/index'
+import Card from './pages/Card'
+import Detail from './pages/Detail'
 
-export default {
+export {
   Home,
   Card,
   Detail
